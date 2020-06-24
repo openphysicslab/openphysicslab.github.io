@@ -8,13 +8,12 @@
   }
 }
 
-/*
+
 body {
   color: #555;
 }
-*/
 
-/*
+
 h1,
 .h1,
 h2,
@@ -31,21 +30,19 @@ h6,
 }
 
 h1, .h1 {
-	font-size: 1.5rem;
-	padding-bottom: 0.5rem;
+	font-size: 2rem;
+	padding-bottom: 1rem;
 
 }
 
 h2, .h2 {
-  font-size: 1.25rem;
-	padding-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 h3, .h3 {
-  font-size: 0.1rem;
-	padding-bottom: 0.5rem;
+  font-size: 1rem;
 }
-*/
+
 
 /*
  * override bootstrap's default container.
