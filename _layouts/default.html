@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+	<title>{{ page.title }}</title>
+	<link rel="stylesheet" href="/assets/css/styles.css">
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+</head>
+ 
+<body>
+	<div class="container" style="padding:0; box-shadow: black 0px 0px 15px;">
+		<div class="container" style="padding:0 25px 0 25px;">
+			<header>
+				<div class="my-header">
+					<div class="row">
+						<div class="col-sm">
+							<a href="index"><img class="img-fluid" src="images/opl_logo.png" width="480px"></a>
+						</div>
+						<div class="col-sm d-none d-lg-block" align="right" style="font-size:16px;">
+							<a href="index"><img class="img-fluid" src="images/ul_logo.png" width="280px"></a> <!-- Welcome to the Open Physics Lab -->
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="blog-masthead">
+				{% include navigation.html %}	
+			</div>
+			<!--
+			<div class="tree">
+				<a href="index.html">Home</a>
+			</div>
+			-->
+			<main role="main">
+				<div class="row">
+					<div class="col-sm-9"> <!-- blog-main -->
+						{{ content }}
+					</div>
+					{% include sidebar.html %}					
+				</div>
+			</main>			
+		</div>
+  	{% include footer.html %}
+	</div>
+	<script src="/assets/js/jquery-3.2.1.min.js"></script>
+	<script src="/assets/js/bootstrap.min.js"></script>
+</body>
+	
+	
+</html>

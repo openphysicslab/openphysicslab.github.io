@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger"> <!-- navbar-dark bg-dark -->
+	<!--<a href="index"><img class="navbar-brand" src="images/opl_logo_icon.png"></a> -->
+			<!--<a class="navbar-brand" href="#">My Electronics</a> -->       
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarsExample09">
+		<ul class="navbar-nav mr-auto"> <!--  mr-auto -->
+			<li {% if page.url == "/" %}class="nav-item active"{% else %}class="nav-item"{% endif %}><a class="nav-link" href="index">HOME</a></li>
+	    
+			<!-- <li {% if page.url == "/experiments.html" %}class="nav-item active"{% else %}class="nav-item"{% endif %}><a class="nav-link" href="experiments">EXPERIMENTS</a></li> -->
+			<li {% if page.url == "/experiments.html" %}class="nav-item active dropdown"{% else %}class="nav-item dropdown"{% endif %}>
+				<a class="nav-link dropdown-toggle" href="experiments" id="navbardrop" data-toggle="dropdown">EXPERIMENTS</a>
+				<div class="nav-item dropdown-menu">
+					<a class="dropdown-item" href="fourier-optics">Fourier Optics</a>
+					<a class="dropdown-item" href="quantum-analogs">Quantum Analogs</a>
+				</div>
+			</li>
+			
+			<li {% if page.url == "/challenges.html" %}class="nav-item active"{% else %}class="nav-item"{% endif %}><a class="nav-link" href="challenges">CHALLENGES</a></li>	
+			<li {% if page.url == "/equipment.html" %}class="nav-item active"{% else %}class="nav-item"{% endif %}><a class="nav-link" href="equipment">EQUIPMENT</a></li>
+			<li {% if page.url == "/contact.html" %}class="nav-item active"{% else %}class="nav-item"{% endif %}><a class="nav-link" href="contact">CONTACT</a></li>
+			<li {% if page.url == "/privacy.html" %}class="nav-item active"{% else %}class="nav-item"{% endif %}><a class="nav-link" href="privacy">PRIVACY</a></li>
+			
+		</ul>
+		<!--
+		<form class="form-inline my-2 my-md-0">
+			<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+		</form>
+		-->
+	</div>
+</nav>
+
+<!-- {% if page.url == "index" %}class="nav-item active"{% else %}class="nav-item"{% endif %}
+<!--
+<nav>
+  <a href="/">Home</a>
+  <a href="/about.html">About</a>
+</nav>
+-->
